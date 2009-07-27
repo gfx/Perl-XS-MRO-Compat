@@ -17,6 +17,8 @@ install_headers 'mro_compat.h';
 tests 't/*.t';
 author_tests 'xt';
 
+auto_set_repository;
+
 clean_files qw(
 		XS-MRO-Compat-* *.stackdump
 		*.gcda *.gcno *.gcov
