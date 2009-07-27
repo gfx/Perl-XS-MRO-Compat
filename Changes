@@ -1,6 +1,9 @@
 Revision history for Perl extension XS::MRO::Compat
 
-0.10
+0.11 Mon Jul 27 14:05:21 2009
+	- re-packaging with Module::Install::XSUtil 0.02
+
+0.10 Mon Jul 27 14:01:43 2009
 	- rename Devel::MRO into XS::MRO::Compat
 	- no ExtUtils::Depends, use Module::Install::XSUtil
 

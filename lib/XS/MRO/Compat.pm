@@ -3,7 +3,7 @@ package XS::MRO::Compat;
 use 5.008_001;
 use strict;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 if($] < 5.010_000){
 	require MRO::Compat;
@@ -26,7 +26,7 @@ XS::MRO::Compat - Provides mro functions for XS modules
 
 =head1 VERSION
 
-This document describes XS::MRO::Compat version 0.10.
+This document describes XS::MRO::Compat version 0.11.
 
 =head1 SYNOPSIS
 
