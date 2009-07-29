@@ -3,16 +3,14 @@ package XS::MRO::Compat;
 use 5.008_001;
 use strict;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 if($] < 5.010_000){
 	require MRO::Compat;
 	require DynaLoader; # unfortunately, XSLoader does not look at dl_load_flags()
 
-	our @ISA;
-	local @ISA           = qw(DynaLoader);
 	local *dl_load_flags = sub(){ 0x01 };
-	__PACKAGE__->bootstrap($VERSION);
+	__PACKAGE__->DynaLoader::bootstrap_inherit($VERSION);
 }
 
 1;
@@ -26,7 +24,7 @@ XS::MRO::Compat - Provides mro functions for XS modules
 
 =head1 VERSION
 
-This document describes XS::MRO::Compat version 0.11.
+This document describes XS::MRO::Compat version 0.12.
 
 =head1 SYNOPSIS
 
