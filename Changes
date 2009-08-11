@@ -1,5 +1,8 @@
 Revision history for Perl extension XS::MRO::Compat
 
+0.13 Tue Aug 11 17:06:13 2009
+	- re-packaging with Module::Install::XSUtil 0.07
+
 0.12 Wed Jul 29 11:49:27 2009
 	- use DynaLoader::bootstrap_inherit()
 	- use Module:Install::XSUtil 0.04

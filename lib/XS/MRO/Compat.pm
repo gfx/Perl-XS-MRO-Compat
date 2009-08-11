@@ -3,7 +3,7 @@ package XS::MRO::Compat;
 use 5.008_001;
 use strict;
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 if($] < 5.010_000){
 	require MRO::Compat;
@@ -24,7 +24,7 @@ XS::MRO::Compat - Provides mro functions for XS modules
 
 =head1 VERSION
 
-This document describes XS::MRO::Compat version 0.12.
+This document describes XS::MRO::Compat version 0.13.
 
 =head1 SYNOPSIS
 
@@ -68,7 +68,7 @@ In 5.10 or later, it is just a public Perl API.
 
 In 5.8.x, it calls C<mro::get_linear_isa> provided by C<MRO::Compat>. It has a
 cache mechanism as Perl 5.10 does, so it is much faster than the direct call of
-C<MRO::Compat>'s C<mro::get_linear_isa>.
+C<mro::get_linear_isa> provided by C<MRO::Compat>.
 
 =head2 void mro_method_changed_in(HV* stash)
 
@@ -83,8 +83,6 @@ This may evaluate I<stash> more than once.
 =head1 DEPENDENCIES
 
 Perl 5.8.1 or later, and a C compiler.
-
-XS::MRO::Compat.
 
 =head1 BUGS
 
