@@ -1,5 +1,9 @@
 Revision history for Perl extension XS::MRO::Compat
 
+0.14 Tue Aug 25 16:45:10 2009
+	- no code changes
+	- re-packaging with Module::Install::XSUtil 0.12
+
 0.13 Tue Aug 11 17:06:13 2009
 	- re-packaging with Module::Install::XSUtil 0.07
 
